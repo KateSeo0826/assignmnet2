@@ -45,6 +45,5 @@ app.use("/product",productController);
 
 const PORT = process.env.PORT;
 app.listen(PORT,()=>{
-
     console.log('Web Server is up and running');
 });
