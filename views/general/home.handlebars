@@ -5,7 +5,7 @@
   <!--Insert Promotiona Section-->
   <div class="container1">
     <div class="banner">
-      <a herf="https://www.amazon.ca/b?ie=UTF8&node=17428761011"><img src="/image/probanner.png"></a>
+      <a herf="https://www.amazon.ca/b?ie=UTF8&node=17428761011"><img src="/img/probanner.png"></a>
 
       <!--bootstrap card with 3 horizontal images-->
       <div class="card-group">
@@ -13,25 +13,25 @@
           <h2> Product Categories </h2>
           <div class="card col-md-4">
             <h3>Cell Phones & Accessoriess</h3>
-            <img src="image/f1.png" alt="Avatar" style="width:100%">
+            <img src="f1.png" alt="product" style="width:100%">
             <a herf="#">Explore More</a>
           </div>
 
           <div class="card col-md-4">
             <h3>Nutrition & Wellnesss</h3>
-            <img src="image/f2.png" alt="Avatar" style="width:100%">
+            <img src="f2.png" alt="product" style="width:100%">
             <a herf="#">Explore More</a>
           </div>
 
           <div class="card col-md-4">
             <h3>Shop deals in Tools</h3>
-            <img src="image/f3.png" alt="Avatar" style="width:100%">
+            <img src="f3.png" alt="product" style="width:100%">
             <a herf="#">Show now</a>
           </div>
 
           <div class="card col-md-4">
             <h3>Valentine's Day Gift Shop</h3>
-            <img src="image/f4.png" alt="Avatar" style="width:100%">
+            <img src="f4.png" alt="product" style="width:100%">
             <a herf="#">Show now</a>
           </div>
         </div>
@@ -43,26 +43,14 @@
       <a herf="/">See more</a>
       <div class="card-group">
         <!--bootstrap card with 3 horizontal images-->
+      <div class="scrollmenu">
         <div class="row">
+          {{#each bestPro}}
           <div class="card col-md-4">
-            <img src="image/best1.png" alt="Avatar" style="width:80%">
+            <img src={{this.img}} alt="Bestseller" style="width:80%">
           </div>
-
-          <div class="card col-md-4">
-            <img src="image/best2.png" alt="Avatar" style="width:80%">
-          </div>
-
-          <div class="card col-md-4">
-            <img src="image/best3.png" alt="Avatar" style="width:80%">
-          </div>
-
-          <div class="card col-md-4">
-            <img src="image/best4.png" alt="Avatar" style="width:80%">
-          </div>
-
-          <div class="card col-md-4">
-            <img src="image/best5.png" alt="Avatar" style="width:80%">
-          </div>
-  <div class="col-side" style="width: 5%; flex-direction:column;"></div>
+              {{/each}}
         </div>
-      </div>
+        </div>
+  <div class="col-side" style="width: 5%; flex-direction:column;"></div>
+    

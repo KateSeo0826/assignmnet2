@@ -1,0 +1,27 @@
+
+        <form class="registration" action="/registration" method="POST">
+ 
+            <h2>Create account</h2>
+            <label for="name"><b>Your name</b></label> <br>
+            <input type="text" id="name" name="name"> <br>
+            <div style="font-size:small;color:violet;">{{errors}} </div><br>
+
+            <label for="startweek"><b>Email</b></label> <br>
+            <input type="text" id="email" name="email"> <br>
+            <div style="font-size:small;color:violet;">{{errors}} </div><br>
+
+            <label for="psw"><b>Password</b></label> <br>
+            <input type="password"  id="password" name="password"> <br>
+            <div style="font-size:small;color:violet;">{{errors}} </div><br>
+
+            <label for="psw-repeat"><b>Password again</b></label><br>
+            <input type="password" id="psw-re" name="psw-re"> <br>
+
+            <button type="submit" value = "registration" class="registerbtn"> Create your Amazon account</button>
+            <p>By creating an account you agree to Amazon's </p>
+            <p><a href="#">Conditions of Use & Privacy</a> notice.</p>
+
+            <p> Already have an account?</p>
+            <button><a href="/login">Login</button>
+        </form>
+   

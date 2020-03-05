@@ -1,27 +1,44 @@
-const product = 
+
+const product =
 {
-    fakeDB : [],
+    fakeDB: [],
 
-    init()
-    {
-        this.fakeDB.push({title:'XPS 13',description:`Our smallest 13-inch laptops feature a virtually 
-        borderless InfinityEdge display and up to 10th gen Intel® processors. 
-        Touch, silver, rose gold and frost options available`,price:`1349.99`});
+    init(){
+
+        this.fakeDB.push({img: "p1.png", title:'Fire tv Stick',price:`CDN$ 59.99`,bestPr: false});
     
-         this. fakeDB.push({title:'XPS 15',description:`Powerhouse performance with the latest processors and NVIDIA 
-        graphics paired with a stunning 4K Ultra HD display. `,price:`1749.99`});
-    
-        this.fakeDB.push({title:'XPS 17',description:`XPS 17 is designed to keep you entertained for more than 9 hours 
-        with a 9-cell battery upgrade.`,price:`1949.99`});
+        this. fakeDB.push({img: "p2.png" ,title:'Internal Solid State Drives',price:`CDN$ 89.99 `,bestPr: false});
+        
+        this.fakeDB.push({img: "p3.png", title:'Smart speaker',price:`CDN$ 114.99`,bestPr: false});
+        
+        this.fakeDB.push({img: "p4.png",title:'TP-Link',price:`CDN$ 16.99`,bestPr:false});
 
-        this.fakeDB.push({title:'XPS 19',description:`XPS 19 is designed to keep you entertained for more than 11 hours 
-        with a 10-cell battery upgrade.`,price:`2149.99`});
+        this.fakeDB.push({img: "p5.png",title:'Kindle paper Writer', price:`CD N$ 49.99`,bestPr: false});
 
+        this.fakeDB.push({img: "best1.png",title:'Replacement Bend',price:`CDN$ 15.99`,bestPr: true});
+
+        this.fakeDB.push({img: "best2.png",title:'Towels',price:`CDN$ 10.99`,bestPr: true});
+        
+        this.fakeDB.push({img: "best3.png",title:'Exercise Mats',price:`CDN$ 25.81`,bestPr: true});
+
+        this.fakeDB.push({img: "best4.png",title:'Home Gyms',price:`CDN$ 16.99`,bestPr: true});
     },
-    getAllProducts()
-    {
+
+    getAllProducts(){
         return this.fakeDB;
+    },
+
+    fakeBestDB: [],
+    getBestSellPro()
+    {
+        for(let index = 0; index < this.fakeDB.length; index++ ){
+            if(this.fakeDB[index].bestPr){
+                this.fakeBestDB.push(this.fakeDB[index]);
+            }
+        }
+        return this.fakeBestDB;
     }
+    
 }
 product.init();
-module.exports = product;
+module.exports=product;

@@ -31,7 +31,7 @@ ul {
 }
 footer {
   font-family: arial;
-  padding: 15px 15px;
+  padding: 5px 5px;
   background-color: #333;
   text-align: center;
   color: white;
@@ -41,12 +41,12 @@ footer {
 /* Add padding to containers */
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 50%;
+  width: 70%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background:  #ddd;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -67,7 +67,7 @@ hr {
   padding: 30px 30px;
   margin: 30px 30;
   border: none;
-  width: 50%;
+  width: 70%;
   opacity: 0.8;
 }
 
@@ -84,7 +84,7 @@ hr {
   padding: 30px 30px;
   margin: 30px 30;
   border: none;
-  width: 50%;
+  width: 70%;
   opacity: 0.8;
 }
 
@@ -123,7 +123,7 @@ hr {
       padding: 30px 30px;
       margin: 30px 30;
       border: none;
-      width: 50%;
+      width: 70%;
       opacity: 0.9;
     } 
     
@@ -176,7 +176,7 @@ hr {
     
 /* Extra styles for the cancel button */
 .cancelbtn {
-  width: auto;
+  width: 70%;
   padding: 10px 18px;
   background-color:lightgray;
 }
@@ -187,21 +187,6 @@ hr {
   margin: 24px 12px 12px 12px;
   padding: 24px 24px 24px 24px;
   position: relative;
-}
-
-img.avatar {
-  width: 20%;
-}
-
-.containerlog {
-  padding: 15px;
-}
-
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-  padding-right: 16px;
 }
 
 /* The Modal (background) */
@@ -245,32 +230,6 @@ span.psw {
   cursor: pointer;
 }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }}
-
   
 /* Product */
 .card3 {
@@ -296,7 +255,7 @@ top: 20px;
 left: 10px;
 background: #333;
 overflow-x: hidden;
-padding: 8px 0;
+padding: 5px 0;
 }
 
 .wrapper {
@@ -328,7 +287,81 @@ font-family: arial;
 .sidenav3 a:hover {
 color: pink;
 }
+
+
+
+.login{
+   margin: 0 auto; 
+   width:40%; 
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px 10px;
+  border-color:darkgray;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login p {
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.registration{
+  margin: 0 auto; 
+  width:40%; 
+ padding: 10px 10px 10px 30px;
+ border-radius: 10px 10px;
+ border-color:darkgray;
+ background-color: #f2f2f2;
+ padding: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
 @media screen and (max-height: 450px) {
 .sidenav3 {padding-top: 15px;}
 .sidenav3 a {font-size: 18px;}
 }
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+}
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}
+
+
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+

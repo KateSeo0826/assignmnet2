@@ -1,0 +1,24 @@
+
+      
+        <form class="login" action="/login" method="POST">
+            <div class="imgcontainer">
+                <img src="amazon.png" class="loginPage">
+                </div>
+            <h2>Log In </h2>
+            <label for="firstName"><b>E-mail address or mobile phone number</label> <br>
+            <input type="text" id="logemail" name="logemail"> <br>
+            <div style="font-size:small;color:violet;"> {{logerrors}}</div><br>
+
+            <label for="psw"><b>Password</b></label> <br>
+            <input type="password" id="logpsw" name="logpsw"> <br>
+            <div style="font-size:small;color:violet;"> {{logerrors}}</div><br>
+
+            <button type="submit" class="registerbtn">Sign In</button>
+            <p>By creating an account you agree to Amazon's </p>
+            <p> Conditions of Use & Privacy notice.</p>
+          
+                <button type="cancelbtn">Cancel</button>
+                <div><a href="#">Forgot password?</a></div>
+         
+        </form>
+       

@@ -1,0 +1,27 @@
+
+<section>
+<div class = "sideContainer">
+  <div class="sidenav3">
+  <a href="#about">Amazon Devies</a>
+  <a href="#services">Amazon Devies Accessories</a>
+  <a href="#clients">Sports & Outdor</a>
+  <a href="#contact">Exercise & Fitness</a>
+  </div>
+</div>
+
+<div class ="container3">
+
+  <div class = "wrapper">
+      {{#each products}}
+      <div class="card3">
+        <img src={{this.img}} alt="Products" style="width:100%">
+        <div class="container">
+          <h4><b>{{this.title}}</b></h4>
+          <p>{{this.price}}</p>
+        </div>
+      </div>
+      {{/each}}
+  </div>
+</div>
+
+</section>
