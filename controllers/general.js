@@ -39,13 +39,12 @@ router.post("/registration",(req,res)=>{
         const sgMail = require('@sendgrid/mail');
         sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
         const msg = {
-            to: `violetds0826@gmail.com`,
+            to: req.body.email,
             from: `${email}`,
             subject: `Registration Form Submit`,
             html:
             `visitor's Full Name : ${name} <br>
              Visitor's Email Address : ${email} <br>
-             Visitor's Password Address : ${password} <br>
             `,
         };
         //Asynchronous operation(who don't know how long  this will take to execute)
@@ -85,8 +84,8 @@ router.post("/login",(req,res)=>{
         const sgMail = require('@sendgrid/mail');
         sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
         const msg = {
-            to: `violetds0826@gmail.com`,
-            from: `${logemail}`,
+            to: `${logemail}`,
+            from: `violetds0826@gmail.com`,
             subject: `Login Form Submit`,
             html:
             `

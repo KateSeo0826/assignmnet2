@@ -32,7 +32,7 @@ const product =
     getBestSellPro()
     {
         for(let index = 0; index < this.fakeDB.length; index++ ){
-            if(this.fakeDB[index].bestPr){
+            if(this.fakeDB[index].bestPr == true){
                 this.fakeBestDB.push(this.fakeDB[index]);
             }
         }

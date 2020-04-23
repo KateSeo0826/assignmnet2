@@ -1,6 +1,7 @@
 const express = require("express");
 const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
+
 //load the environmetn variable file
 require('dotenv').config({path:"./config/keys.env"});
 
@@ -30,7 +31,7 @@ app.use("/",productController);
 
 //sets up server
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT
 app.listen(PORT,()=>{
     console.log('Web Server is up and running');
 });
